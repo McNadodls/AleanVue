@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('NotoSans-Bold.eot');
+	src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+		url('NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('NotoSans-Bold.woff') format('woff'),
+		url('NotoSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('NotoSans.eot');
+	src: local('Noto Sans'), local('NotoSans'),
+		url('NotoSans.eot?#iefix') format('embedded-opentype'),
+		url('NotoSans.woff') format('woff'),
+		url('NotoSans.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Old Standard TT';
+	src: url('OldStandardTT-Regular.eot');
+	src: local('Old Standard TT Regular'), local('OldStandardTT-Regular'),
+		url('OldStandardTT-Regular.eot?#iefix') format('embedded-opentype'),
+		url('OldStandardTT-Regular.woff') format('woff'),
+		url('OldStandardTT-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Old Standard TT';
+	src: url('OldStandardTT-Bold.eot');
+	src: local('Old Standard TT Bold'), local('OldStandardTT-Bold'),
+		url('OldStandardTT-Bold.eot?#iefix') format('embedded-opentype'),
+		url('OldStandardTT-Bold.woff') format('woff'),
+		url('OldStandardTT-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
