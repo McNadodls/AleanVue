@@ -8,17 +8,50 @@
         <meta name="author" content="Мансуров Дмитрий">
         <link rel="stylesheet" type="text/css" href="./index.css">
         <title>BERRY</title>
+        <script src="components/menu/menu.js" type="text/javascript" defer></script>
     </head>
     <body class="body">
         <header class="header">
-
+            <menu-component></menu-component>
+            
+            <!-- убирать на других страницах -->
+            <div class="header__"> 
+                <h1 class="header__title">Свежие ягоды с доставкой по Санкт-Петербургу</h1>
+                <p class="header__signature">Побалуйте себя и своих близких нашими вкусными и свежими ягодными наборами.</p>
+                <button class="header__button">Перейти в каталог</button>
+            </div>
         </header>
         <main class="main">
 
         </main>
         <footer class="footer">
-            
+            <h2 class="footer__title">Наши контакты</h2>
+            <ul class="contacts">
+                <li class="contacts__container">
+                    <h3 class="contacts__title">Телефон:</h3>
+                    <p class="contacts__text">+7 (999) 123-45-67</p>
+                </li>
+                <li class="contacts__container">
+                    <h3 class="contacts__title">Время работы:</h3>
+                    <p class="contacts__text">Ежедневно с 9.00 до 21.00</p>
+                </li>
+                <li class="contacts__container">
+                    <h3 class="contacts__title">E-mail:</h3>
+                    <p class="contacts__text">berries@yandex.ru</p>
+                </li>
+                <li class="contacts__container">
+                    <h3 class="contacts__title">Адрес:</h3>
+                    <p class="contacts__text">Санкт-Петербург, Невский пр. 10/2А</p>
+                </li>
+                <li class="contacts__container">
+                    <h3 class="contacts__title">Социальные сети:</h3>
+                    <a class="contacts__link"><img class="contacts__img social__Inst"/></a>
+                    <a class="contacts__link"><img class="contacts__img social__VK"/></a>
+                    <a class="contacts__link"><img class="contacts__img social__WhatsApp"/></a>
+                </li>
+            </ul>
+            <menu-component></menu-component>
         </footer>
-        <script src="./index.js" type="module"></script>
+        <script src="index.js" type="module"></script>
     </body>
 </html>
