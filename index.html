@@ -12,12 +12,12 @@
     </head>
     <body class="body">
         <header class="header">
-            <menu-component></menu-component>
+            <menu-component prop="header"></menu-component>
             
             <!-- убирать на других страницах -->
-            <div class="header__"> 
-                <h1 class="header__title">Свежие ягоды с доставкой по Санкт-Петербургу</h1>
-                <p class="header__signature">Побалуйте себя и своих близких нашими вкусными и свежими ягодными наборами.</p>
+            <div class="header__banner"> 
+                <h1 class="header__title">Свежие ягоды с доставкой <br/> по Санкт-Петербургу</h1>
+                <p class="header__signature">Побалуйте себя и своих близких нашими вкусными <br/> и свежими ягодными наборами.</p>
                 <button class="header__button">Перейти в каталог</button>
             </div>
         </header>
@@ -41,16 +41,24 @@
                 </li>
                 <li class="contacts__container">
                     <h3 class="contacts__title">Адрес:</h3>
-                    <p class="contacts__text">Санкт-Петербург, Невский пр. 10/2А</p>
+                    <p class="contacts__text">Санкт-Петербург,<br/>Невский пр. 10/2А</p>
                 </li>
                 <li class="contacts__container">
                     <h3 class="contacts__title">Социальные сети:</h3>
-                    <a class="contacts__link"><img class="contacts__img social__Inst"/></a>
-                    <a class="contacts__link"><img class="contacts__img social__VK"/></a>
-                    <a class="contacts__link"><img class="contacts__img social__WhatsApp"/></a>
+                    <ul class="contacts__social">
+                        <li class="contacts__botton">
+                            <a class="contacts__link contacts__link_social_Inst" href=""></a>
+                        </li>
+                        <li class="contacts__botton">
+                            <a class="contacts__link contacts__link_social_VK" href=""></a>
+                        </li>
+                        <li class="contacts__botton">
+                            <a class="contacts__link contacts__link_social_WhatsApp" href=""></a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
-            <menu-component></menu-component>
+            <menu-component prop="footer"></menu-component>
         </footer>
         <script src="index.js" type="module"></script>
     </body>

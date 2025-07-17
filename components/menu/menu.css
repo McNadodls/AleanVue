@@ -2,26 +2,118 @@
     width: 100%;
     height: 146px;
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
     align-items: center;
+    gap: 32px;
+    padding: 0 100px;
 }
 .menu__logo { 
-        background-color: red;
-        width: 106px;
-        height: 106px;
+    flex-shrink: 0;
+    width: 106px;
+    height: 106px;
+    background-image: url('../../images/logo.svg');
 }
 .menu__links{ 
     list-style: none;
     display: flex;
+    justify-content: space-between;
     gap: 50px;
 }
 .menu__link{
+    cursor: pointer;
     
 }
 .menu__link_text{
-    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    font-family: var(--font-main);
     font-weight: normal;
     font-size: 18px;
     color: var(--color-text-white);
     text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.menu__link_img_basket{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../images/basket.svg');
+    background-size: 100% 100%;
+
+}
+.menu__link_img_search{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../images/search.svg');
+    background-size: 100% 100%;
+}
+
+.menu__info{
+    display: flex;
+    
+    width: 100%;
+    gap: 16px;
+    justify-content: space-between;
+}
+.menu__info_align_header{
+    max-width: 350px;
+}
+.menu__info_align_footer{
+    max-width: min-content;
+}
+.menu__buttons{
+    display: flex;
+    list-style: none;
+    max-width: 120px;
+    width: 100%;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__button{
+
+}
+
+.menu__contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.menu__contacts_text{
+    font-family: var(--font-main);
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--color-text-white);
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+.menu__contacts_button{
+    font-family: var(--font-main);
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--color-text-white);
+    text-decoration: underline;
+    text-wrap: nowrap;
+}
+.menu__signature{
+    display: flex;
+    max-width: 570px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 16px
+}
+.menu__signature_button{
+    font-family: var(--font-main);
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--color-text-white);
+    text-decoration: underline;
+    text-wrap: nowrap;
+}
+.menu__contacts_copyright{
+    font-family: var(--font-main);
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--color-text-white);
+    text-wrap: nowrap;
 }
