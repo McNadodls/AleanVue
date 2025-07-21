@@ -1,8 +1,10 @@
 @import url(./vendor/fonts/stylesheet.css);
 @import url(./commonStyles/variables.css);
 
-@import url(./components/menu/menu.css);
-
+/* Отдельные компоненты */
+@import url(./components/Menu/Menu.css);
+@import url(./components/SectionSale/SectionSale.css);
+/* Отдельные блоки */
 @import url(./blocks/header/header.css);
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/contacts/contacts.css);
@@ -42,7 +44,9 @@ button {
     letter-spacing: 5px;
     text-transform: uppercase;
     color: var(--color-text-accent-dark);
-
+}
+.section__title_white{
+    color: var(--color-text-white);
 }
 
 .section-info{
@@ -77,10 +81,143 @@ button {
 .section-info__strong-side{
     width: 100%;
     background-color:  var(--color-el-beige-opasity-15);
-    padding: 30px 0;
+    padding: 30px 14%;
 }
 .section-info__list{
-    display: grid;
-    grid-template-columns: 29.4% 29.4%;
-    grid-gap:  0 182px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
 }
+.section-info_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 424px;
+    width: 100%;
+}
+.section-info_column:first-of-type{
+    padding-top: 35px;
+}
+.section-info__list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.section-info__list-element{ 
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.section-info__list-element_second-column {
+    padding-left:  35px;
+}
+.section-info__list-text{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.section-info__icon{
+    width: 40px;
+    height: 40px;
+}
+.section-info__subtitle{
+    font-family: var(--font-main);
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0%;
+    color: var(--color-text-main);
+}
+.section-info__img{
+    width: 100%;
+}
+
+.section-catalog{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.catalog-preview{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(max-content, 390px));
+    grid-template-rows: repeat(2, minmax(max-content, 350px));
+    grid-gap: 50px 32px;
+}
+.catalog-preview__card{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 5px;
+}
+.catalog-preview__card-title{
+    font-family: var(--font-main);
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: var(--color-text-white);
+}
+.catalog-preview__card-button{
+    width: 62%;
+    height: 60px;
+    font-family: var(--font-main);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-text-white);
+    border: 1px solid var(--color-el-white);
+    border-radius: 5px;
+}
+.catalog-preview__card-button_more{
+    color: var(--color-text-accent-dark);
+    border: 1px solid var(--color-accent-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+
+.catalog-preview__card[name="catalog-preview__box"]{
+    background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+		url(./images/catalog-preview__box.png);
+}
+.catalog-preview__card[name="catalog-preview__basket"]{
+    background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+		url(./images/catalog-preview__basket.png);
+}
+.catalog-preview__card[name="catalog-preview__bouquet"]{
+    background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+		url(./images/catalog-preview__bouquet.png);
+}
+.catalog-preview__card[name="catalog-preview__tare"]{
+    background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+		url(./images/catalog-preview__tare.png);
+}
+.catalog-preview__card[name="catalog-preview__heart"]{
+    background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+		url(./images/catalog-preview__heart.png);
+}
+.catalog-preview__card[name="catalog-preview__more"]{
+    background-color: var(--color-el-white);
+    border: 1px solid var(--color-el-dark-gray-opasity-10);
+		
+}
+
+

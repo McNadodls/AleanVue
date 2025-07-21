@@ -8,7 +8,8 @@
         <meta name="author" content="Мансуров Дмитрий">
         <link rel="stylesheet" type="text/css" href="./index.css">
         <title>BERRY</title>
-        <script src="components/menu/menu.js" type="text/javascript" defer></script>
+        <script src="components/menu/Menu.js" type="text/javascript" defer></script>
+        <script src="components/SectionSale/SectionSale.js" type="text/javascript" defer></script>
     </head>
     <body class="body">
         <header class="header">
@@ -25,7 +26,7 @@
             <div class="page-main">
                 <section class="section section-info">
                     <div class="section-info__about">
-                        <img class="section-info__img" src="./images/section-info__img.png"/>
+                        <img class="section-info__img" src="./images/section-info__img.png" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
                         <div class="section-info__container">
                             <h2 class="section__title">О нас</h2>
                             <p class="section-info__signature">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elementum urna, non efficitur lectus. Nullam eget hendrerit sem, a placerat purus. Vivamus porttitor blandit volutpat. 
@@ -37,53 +38,78 @@
                     <div class="section-info__strong-side">
                         <h2 class="section__title">Наши преимущества</h2>
                         <ul class="section-info__list">
-                            <li class="section-info__list-element">
-                                <img/>
-                                <p class="section-info__subtitle">Скорость</p>
-                                <p class="section-info__signature">Быстрая доставка до двери</p>
-                            </li>
-                            <li class="section-info__list-element">
-                                <img/>
-                                <p class="section-info__subtitle">Доступность</p>
-                                <p class="section-info__signature">Выгодные акции и бонусы</p>
-                            </li>
-                            <img/>
-                            <img/>
-                            <li class="section-info__list-element">
-                                <img/>
-                                <p class="section-info__subtitle">Безопасность</p>
-                                <p class="section-info__signature">Высокое качество продукции</p>
-                            </li>
-                            <li class="section-info__list-element">
-                                <img/>
-                                <p class="section-info__subtitle">Разнообразие</p>
-                                <p class="section-info__signature">Возможность наполнения набора по своим вкусовым предпочтениям</p>
-                            </li>
+                            <div class="section-info_column">
+                                <div class="section-info__list-container">
+                                    <li class="section-info__list-element">
+                                        <img class="section-info__icon" src="./images/section-info__icon_1.svg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+                                        <div class="section-info__list-text">
+                                            <p class="section-info__subtitle">Скорость</p>
+                                            <p class="section-info__signature">Быстрая доставка до двери</p>
+                                        </div>
+                                    </li>
+                                    <li class="section-info__list-element">
+                                        <img class="section-info__icon" src="./images/section-info__icon_2.svg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+                                        <div class="section-info__list-text">
+                                            <p class="section-info__subtitle">Доступность</p>
+                                            <p class="section-info__signature">Выгодные акции и бонусы</p>
+                                        </div>
+                                    </li>
+                                </div>
+                                <img class="section-info__img" src="./images/section-info__list-img_1.png" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+                            </div>
+                            <div class="section-info_column">
+                                <img class="section-info__img" src="./images/section-info__list-img_2.png" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+                                <div class="section-info__list-container">
+                                    <li class="section-info__list-element section-info__list-element_second-column">
+                                        <img class="section-info__icon" src="./images/section-info__icon_3.svg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+                                        <div class="section-info__list-text">
+                                            <p class="section-info__subtitle">Безопасность</p>
+                                            <p class="section-info__signature">Высокое качество продукции</p>
+                                        </div>
+                                    </li>
+                                    <li class="section-info__list-element section-info__list-element_second-column">
+                                        <img class="section-info__icon" src="./images/section-info__icon_4.svg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+                                        <div class="section-info__list-text">
+                                            <p class="section-info__subtitle">Разнообразие</p>
+                                            <p class="section-info__signature">Возможность наполнения набора по своим вкусовым предпочтениям</p>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 </section>
-                <section class="section section-sale">
-                    <h2 class="section__title section__title_white">акция</h2>
-                    <p class="section-sale__subtitle">При первом заказе дарим скидку 30 % по промокоду berries!</p>
-                    <button class="section-sale__button">Подробнее</button>
-                </section>
-                <!-- <section class="section section-catalog">
+
+                <section-sale-component></section-sale-component>
+
+                <section class="section section-catalog">
                     <h2 class="section__title">каталог</h2>
-                    <div class="section-catalog__grid">
-                        <div class="section-catalog__element">
-                            <img />
-                            <h3 class="section-catalog__element-title">Свежие ягоды в простой коробке</h3>
-                            <button class="section-catalog__element-button">Посмотреть</button>
+                    <div class="catalog-preview">
+                        <div class="catalog-preview__card" name="catalog-preview__box">
+                            <h3 class="catalog-preview__card-title">Свежие ягоды<br/>в простой коробке</h3>
+                            <button class="catalog-preview__card-button">Посмотреть</button>
+                        </div>
+                        <div class="catalog-preview__card" name="catalog-preview__basket">
+                            <h3 class="catalog-preview__card-title">Свежие ягоды<br/>в корзинке</h3>
+                            <button class="catalog-preview__card-button">Посмотреть</button>
+                        </div>
+                        <div class="catalog-preview__card" name="catalog-preview__bouquet">
+                            <h3 class="catalog-preview__card-title">Свежие ягоды<br/>в форме букета</h3>
+                            <button class="catalog-preview__card-button">Посмотреть</button>
+                        </div>
+                        <div class="catalog-preview__card" name="catalog-preview__tare">
+                            <h3 class="catalog-preview__card-title">Свежие ягоды<br/>в пластиковой таре</h3>
+                            <button class="catalog-preview__card-button">Посмотреть</button>
+                        </div>
+                        <div class="catalog-preview__card" name="catalog-preview__heart">
+                            <h3 class="catalog-preview__card-title">Свежие ягоды<br/>в коробке-сердце</h3>
+                            <button class="catalog-preview__card-button">Посмотреть</button>
+                        </div>
+                        <div class="catalog-preview__card" name="catalog-preview__more">
+                            <button class="catalog-preview__card-button catalog-preview__card-button_more">Посмотреть<br/>все разделы <img src="./images/Arrow.svg"/></button>
                         </div>
                     </div>
-                    <div class="section-catalog__grid">
-                        <div class="section-catalog__element">
-                            <img />
-                            <h3 class="section-catalog__element-title">Свежие ягоды в простой коробке</h3>
-                            <button class="section-catalog__element-button">Посмотреть</button>
-                        </div>
-                    </div>
-                </section> -->
+                </section>
             </div>
         </main>
         <footer class="footer">

@@ -1,0 +1,27 @@
+.section-sale { 
+    background: 
+		linear-gradient(rgba(13, 26, 32, 0.5), rgba(13, 26, 32, 0.5)), 
+		url(../../images/section-sale.png);
+    height: 399px;
+    padding: 0 14%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-sale__subtitle{
+    font-family: var(--font-main);
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--color-text-white);
+    margin: 20px 0 31px;
+}
+.section-sale__button{
+    width: 262px;
+    height: 55px;
+    font-family: var(--font-main);
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--color-text-white);
+    border: 1px solid var(--color-el-white);
+    border-radius: 5px;
+}

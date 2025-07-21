@@ -5,7 +5,7 @@ class Menu extends HTMLElement {
     }
     
     attributeChangedCallback(name, oldValue, newValue) {
-        fetch('/components/menu/menu.html')
+        fetch('/components/Menu/Menu.html')
             .then(response => response.text())
             .then(html => {
                 const parser = new DOMParser();

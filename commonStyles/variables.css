@@ -4,6 +4,7 @@
     --color-background: #1F3339;
 
     --color-el-dark-gray: #333333;
+    --color-el-dark-gray-opasity-10: #3333331A;
     --color-el-gray: #6A6A6A;
     --color-el-light-gray: #C4C4C4;
     --color-el-beige: #D2CBC1;
@@ -11,7 +12,7 @@
     --color-el-white: #FFFFFF;
 
     --color-text-main: #333333;
-    --color-text-accent-dark: #050505;
+    --color-text-accent-dark: #4D0200;
     --color-text-accent-light: #E5555D;
     --color-text-white: #FFFFFF;
     --color-text-light-grey: #C4C4C4;
