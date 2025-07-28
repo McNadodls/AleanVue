@@ -110,6 +110,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- супер костыль через js el.previousElementSibling передалать -->
                 <section class="section section-hit">
                     <h2 class="section__title">хит продаж</h2>
                     <div class="slider-hit">
@@ -179,8 +180,37 @@
                         </div>
                     </div>
                 </section>
+                <section class="section section-delivery">
+                    <img class="section-delivery__img" src="./images/section-delivery.png">
+                    <div class="section-delivery__container">
+                        <ul class="section-delivery__list">
+                            <h2 class="section__title">Доставка</h2>
+                            <li class="section-delivery__signature">Ежедневно, с 9.00 до 23.00</li>
+                            <li class="section-delivery__signature">По Санкт-Петербургу (в пределах КАД) доставка 350 ₽</li>
+                            <li class="section-delivery__signature">При заказе от 1 800 ₽ доставка бесплатно</li>
+                        </ul>
+                        <ul class="section-delivery__list">
+                            <h2 class="section__title">оплата</h2>
+                            <li class="section-delivery__signature">Картой онлайн</li>
+                            <li class="section-delivery__signature">Наличными курьеру</li>
+                            <li class="section-delivery__signature">Картой курьеру при получении заказа</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section section-feedback">
+                    <form class="section-feedback__form">
+                            <img class="section-feedback__img" src="./images/pngwing.png"/>
+                            <h2 class="section__title">Обратная связь</h2>
+                            <p class="section-feedback__signature">Если у Вас остались вопросы, или Вы не нашли то, что искали, свяжитесь с нами, заполнив форму обратной связи</p>
+                            <input class="section-feedback__input" type="email" placeholder="Ваше имя"/>
+                            <input class="section-feedback__input" type="number" placeholder="Ваш номер"/>
+                            <button class="section-feedback__submit" type="submit">Отправить</button>
+                    </form>
+                </section>
             </div>
         </main>
+        <!-- супер костыль через анимации css передалать -->
+        <a class="BtnToUp"></a>
         <footer class="footer">
             <h2 class="footer__title">Наши контакты</h2>
             <ul class="contacts">
@@ -217,6 +247,7 @@
             </ul>
             <menu-component prop="footer"></menu-component>
         </footer>
+        
         <script src="index.js" type="module"></script>
     </body>
 </html>
