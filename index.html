@@ -12,7 +12,8 @@
         <script src="components/SectionSale/SectionSale.js" type="text/javascript" defer></script>
     </head>
     <body class="body">
-        <header class="header">
+        <header class="header" id="header">
+             
             <menu-component prop="header"></menu-component>
             
             <!-- убирать на других страницах -->
@@ -110,7 +111,7 @@
                         </div>
                     </div>
                 </section>
-                <!-- супер костыль через js el.previousElementSibling передалать -->
+                <!-- супер костыль через js el.previousElementSibling, перепишу -->
                 <section class="section section-hit">
                     <h2 class="section__title">хит продаж</h2>
                     <div class="slider-hit">
@@ -209,8 +210,8 @@
                 </section>
             </div>
         </main>
-        <!-- супер костыль через анимации css передалать -->
-        <a class="BtnToUp"></a>
+        <!-- супер костыль через анимации css, перепишу -->
+        <a class="BtnToUp" href="#header"></a>
         <footer class="footer">
             <h2 class="footer__title">Наши контакты</h2>
             <ul class="contacts">
