@@ -18,6 +18,9 @@
     outline: none;
     transition: all ease 0.2s;
 }
+html { 
+     scroll-behavior: smooth;
+}
 button {
     border: none;
     outline: none;

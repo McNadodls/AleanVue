@@ -2,7 +2,7 @@ const hitBtnL = document.querySelector("#slider-hit__button_L");
 const hitBtnR = document.querySelector("#slider-hit__button_R");
 const hitCount1 = document.querySelector('#slider-hit__counter_1');
 const hitCount2 = document.querySelector('#slider-hit__counter_2');
-// const slides = document.querySelectorAll(".slider-hit__page");
+const btn = document.getElementById('upBtn');
 
 
 function HandleSwapHit (e) {
@@ -31,5 +31,9 @@ function HandleSwapHit (e) {
             return
         }
 };
+
+window.addEventListener('scroll', () => {
+  btn.classList.toggle('BtnToUp_show', window.scrollY > 600);
+});
 hitBtnL.addEventListener("click", HandleSwapHit);
 hitBtnR.addEventListener("click", HandleSwapHit);

@@ -430,26 +430,16 @@
 
 /* Времено переделаю позже  */
 .BtnToUp {
-    position: sticky;
     left: 100px;
     bottom: 100px;
     width: 50px;
     height: 50px;
-    margin-bottom: 100px;
     background-image: url(../../images/btn\ up.svg);
-    animation-name: BtnToUp;
-    animation-duration: 1ms;
-    animation-direction: alternate;
-    animation-timeline: scroll(block nearest);
+    opacity: 0;
+    position: fixed;
+    pointer-events: none;
 }
-@keyframes BtnToUp {
-    10%{
-        display: none;
-    }
-    11%{
-        display: block;
-    }
-    100%{
-        display: block;
-    }
+.BtnToUp_show{
+    opacity: 1;
+    pointer-events:all;
 }
