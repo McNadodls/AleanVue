@@ -320,6 +320,11 @@
     line-height: 24px;
     color: var(--color-text-white);
 }
+#slider-hit__button_L[aria-disabled="true"],
+#slider-hit__button_R[aria-disabled="true"] {
+  opacity: 0.5;
+  pointer-events: none;
+}
 
 
 .section-delivery {
