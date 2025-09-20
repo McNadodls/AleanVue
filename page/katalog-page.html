@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="BERRY">
+        <meta name="kaywords" content="HTML, CSS, JS, BERRY">
+        <meta name="author" content="Мансуров Дмитрий">
+        <link rel="stylesheet" type="text/css" href="../index.css">
+        <title>BERRY</title>
+        <script src="../components/menu/Menu.js" type="text/javascript" defer></script>
+        <script src="../components/SectionSale/SectionSale.js" type="text/javascript" defer></script>
+    </head>
+    <body class="body">
+        <header class="header" id="header">
+             
+            <menu-component prop="header"></menu-component>
+        </header>
+        <main class="main">
+            <div class="page-main">
+                
+            </div>
+        </main>
+        <a class="BtnToUp" href="#header" id="upBtn"></a>
+        <footer class="footer">
+            <h2 class="footer__title">Наши контакты</h2>
+            <ul class="contacts">
+                <li class="contacts__container">
+                    <h3 class="contacts__title">Телефон:</h3>
+                    <p class="contacts__text">+7 (999) 123-45-67</p>
+                </li>
+                <li class="contacts__container">
+                    <h3 class="contacts__title">Время работы:</h3>
+                    <p class="contacts__text">Ежедневно с 9.00 до 21.00</p>
+                </li>
+                <li class="contacts__container">
+                    <h3 class="contacts__title">E-mail:</h3>
+                    <p class="contacts__text">berries@yandex.ru</p>
+                </li>
+                <li class="contacts__container">
+                    <h3 class="contacts__title">Адрес:</h3>
+                    <p class="contacts__text">Санкт-Петербург,<br/>Невский пр. 10/2А</p>
+                </li>
+                <li class="contacts__container">
+                    <h3 class="contacts__title">Социальные сети:</h3>
+                    <ul class="contacts__social">
+                        <li class="contacts__botton">
+                            <a class="contacts__link contacts__link_social_Inst" href=""></a>
+                        </li>
+                        <li class="contacts__botton">
+                            <a class="contacts__link contacts__link_social_VK" href=""></a>
+                        </li>
+                        <li class="contacts__botton">
+                            <a class="contacts__link contacts__link_social_WhatsApp" href=""></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <menu-component prop="footer"></menu-component>
+        </footer>
+        
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
