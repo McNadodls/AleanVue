@@ -11,6 +11,8 @@
 /* Отдально все блоки со страницы */
 @import url(./blocks/main-page/main-page.css);
 
+@import url(./page/catalog-page.css);
+
 * { 
     box-sizing: border-box;
     margin: 0;
@@ -29,6 +31,11 @@ button {
 }
 
 .main{ 
+    position: relative;
     width: 100%;
     background-color: var(--color-el-white);
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 80px 0;
 }

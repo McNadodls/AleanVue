@@ -1,0 +1,22 @@
+.navigation{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+.navigation__link{
+    font-family: var(--font-main);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: var(--color-text-main);
+}
+.navigation__link_active{
+    color: var(--color-text-accent-dark);
+}
+.navigation__link::before{
+    content: "->";
+}
+.navigation__link:first-of-type::before{
+    content: "";
+}

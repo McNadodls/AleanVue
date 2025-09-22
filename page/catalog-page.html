@@ -12,14 +12,19 @@
         <script src="../components/SectionSale/SectionSale.js" type="text/javascript" defer></script>
     </head>
     <body class="body">
-        <header class="header" id="header">
-             
+        <header class="header header_page_catalog" id="header">
             <menu-component prop="header"></menu-component>
         </header>
         <main class="main">
-            <div class="page-main">
-                
-            </div>
+            <!-- ЗАГЛУШКА перенести в отдельный компонент -->
+            <nav class="navigation">
+                <a class="navigation__link">Главная</a>
+                <a class="navigation__link navigation__link_active">Свежие ягоды в простой коробке</a>
+            </nav>
+            <section>
+                <h2 class="section__title">каталог</h2>
+            </section>
+            <section-sale-component></section-sale-component>
         </main>
         <a class="BtnToUp" href="#header" id="upBtn"></a>
         <footer class="footer">

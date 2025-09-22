@@ -1,11 +1,16 @@
 .header { 
     width: 100%;
-    height: 704px;
     background: url("../../images/banner.png")  no-repeat;
     background-size: cover;
     resize: both;
     display: flex;
     flex-direction: column;
+}
+.header_page_main{
+    height: 704px;
+}
+.header_page_catalog{
+    height: min-content;
 }
 .header__banner{
     height: 100%;

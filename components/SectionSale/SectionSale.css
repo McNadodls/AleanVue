@@ -2,6 +2,7 @@
     background: 
 		linear-gradient(rgba(13, 26, 32, 0.5), rgba(13, 26, 32, 0.5)), 
 		url(../../images/section-sale.png);
+    background-size: 100% 100%;
     height: 399px;
     padding: 0 14%;
     display: flex;
