@@ -18,13 +18,58 @@
         <main class="main">
             <!-- ЗАГЛУШКА перенести в отдельный компонент -->
             <nav class="navigation">
-                <a class="navigation__link">Главная</a>
+                <a class="navigation__link" href="../index.html">Главная</a>
                 <a class="navigation__link navigation__link_active">Свежие ягоды в простой коробке</a>
             </nav>
-            <section>
+            <section class="section catalog">
                 <h2 class="section__title">каталог</h2>
+                <div class="catalog__menu">
+                    <input type="radio" id="type__simple" name="catalog__menu"/>
+                    <label for="type__simple" class="catalog__nav">
+                        <img class="catalog__nav_img" src="" alt="Простая коробка"/>
+                        <p class="catalog__nav_title">Простая коробка</p>
+                    </label>
+                    
+                    <input type="radio" id="type__heart" name="catalog__menu"/>
+                    <label for="type__heart" class="catalog__nav">
+                        <img class="catalog__nav_img" src="" alt="Коробка-сердце"/>
+                        <p class="catalog__nav_title">Коробка-сердце</p>
+                    </label>
+
+                    <input type="radio" id="type__plastic" name="catalog__menu"/>
+                    <label for="type__plastic" class="catalog__nav">
+                        <img class="catalog__nav_img" src="" alt="Пластиковая тара"/>
+                        <p class="catalog__nav_title">Пластиковая тара</p>
+                    </label>
+
+                    <input type="radio" id="type__busket" name="catalog__menu"/>
+                    <label for="type__busket" class="catalog__nav">
+                        <img class="catalog__nav_img" src="" alt="Корзинка"/>
+                        <p class="catalog__nav_title">Корзинка</p>
+                    </label>
+
+                    <input type="radio" id="type__bouquet" name="catalog__menu"/>
+                    <label for="type__bouquet" class="catalog__nav">
+                        <img class="catalog__nav_img" src="" alt="Букет"/>
+                        <p class="catalog__nav_title">Букет</p>
+                    </label>
+                </div>
+
+                <div class="catalog__body">
+                    <div class="catalog__setings">
+                        <div class="catalog__filter">
+                            <h3 class="catalog__filter_title"></h3>
+                            TODO: Сделать отдельный компонент с пропсами для радио 
+                            <div class="">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </section>
-            <section-sale-component></section-sale-component>
+            <sale-component></sale-component>
         </main>
         <a class="BtnToUp" href="#header" id="upBtn"></a>
         <footer class="footer">

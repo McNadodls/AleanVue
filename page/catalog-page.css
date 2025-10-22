@@ -10,6 +10,7 @@
     font-size: 14px;
     line-height: 28px;
     color: var(--color-text-main);
+    text-decoration: none;
 }
 .navigation__link_active{
     color: var(--color-text-accent-dark);
@@ -20,3 +21,20 @@
 .navigation__link:first-of-type::before{
     content: "";
 }
+.section-catalog{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.catalog__menu{
+    width: 730px;
+    display: flex;
+    gap: 13px;
+}
+.catalog__nav{
+    width: 146px;
+}
+
